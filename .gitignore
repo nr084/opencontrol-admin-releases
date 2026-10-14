@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+*.apk
+*.aab
+*.jks
+*.keystore
+*.p12
+*.log

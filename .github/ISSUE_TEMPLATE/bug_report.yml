@@ -1,0 +1,32 @@
+name: Bug report / Сообщение об ошибке
+description: Report a reproducible problem / Опишите воспроизводимую проблему
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove passwords, tokens and private network data. Удалите пароли, токены и внутренние данные сети."
+  - type: input
+    id: version
+    attributes:
+      label: App version / Версия приложения
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version / Устройство и версия Android
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Шаги воспроизведения
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result / Ожидаемый и фактический результат
+    validations:
+      required: true
