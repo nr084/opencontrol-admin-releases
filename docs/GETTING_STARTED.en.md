@@ -4,7 +4,7 @@
 
 ## Install
 
-Download `OpenControlAdmin-0.1.0.apk` from [the release page](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0). Allow installation from your browser or file manager when Android asks. Use the accompanying SHA-256 file to verify the download if needed.
+Download `OpenControlAdmin-0.2.apk` from [the release page](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.2). Allow installation from your browser or file manager when Android asks. Use the accompanying SHA-256 file to verify the download if needed.
 
 If you installed the earlier **debug-signed** local preview, uninstall it first: Android does not allow an in-place update with a different signing certificate. Uninstalling removes local profiles and saved credentials. Future releases signed with the same production key can update this signed release.
 
@@ -23,6 +23,8 @@ Enable **Сохранить пароль** (Save password) only if you want the 
 Normal HTTPS connections use system trust. A private certificate may require confirmation: compare the displayed SHA-256 fingerprint with a trusted copy from your administrator. Once confirmed, the app pins that certificate for the profile.
 
 When a pinned certificate changes, connection is blocked. Verify the replacement independently, edit the profile and select **Сбросить доверие сертификату** (Reset certificate trust), then reconnect. Do not reset trust simply to silence an unexpected warning.
+
+Version 0.2 lets you explicitly allow an expired certificate in the trust prompt. The exception is scoped to the profile and exact fingerprint; it does not accept a different certificate. Revoke it in the profile editor. Changing the endpoint or resetting trust clears the exception.
 
 ## Navigate
 
@@ -51,4 +53,5 @@ Android uses a periodic interval of about 15 minutes but can delay checks in Doz
 - **Screenshot is blank:** production builds protect the window from screen capture. Repository screenshots are captured by a test runner in an isolated emulator using synthetic data.
 
 The developer does not supply corporate server access or accounts. Keep support reports free of credentials and internal network data.
+
 

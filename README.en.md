@@ -7,11 +7,13 @@
 </p>
 
 <p align="center"><b>English</b> · <a href="README.md">Русский</a></p>
-<p align="center"><a href="https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0"><b>Download for Android</b></a> · <a href="docs/GETTING_STARTED.en.md">Getting started</a> · <a href="https://github.com/nr084/opencontrol-admin-releases/issues">Report an issue</a></p>
+<p align="center"><a href="https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.2"><b>Download for Android</b></a> · <a href="docs/GETTING_STARTED.en.md">Getting started</a> · <a href="https://github.com/nr084/opencontrol-admin-releases/issues">Report an issue</a></p>
 
 **A mobile administration companion for your existing Kerio Control firewall.** Switch between gateways, inspect active hosts and network interfaces, review traffic rules, and get notified when API connectivity changes — in the familiar green OpenControl design.
 
 This repository hosts public releases, screenshots and documentation. Application source code is maintained privately. **The current app interface is in Russian; this documentation is available in English and Russian.**
+
+**New in 0.2:** an explicit exception for a pinned expired certificate and corrected service names in traffic rules. [Release notes](docs/RELEASE-0.2.md).
 
 ## A look inside
 
@@ -33,7 +35,7 @@ Screenshots show the actual Android interface connected to a local synthetic API
 
 ## What you can do
 
-| Feature | In version 0.1.0 |
+| Feature | In version 0.2 |
 | :--- | :--- |
 | Multiple profiles | Add, edit, delete and switch between Kerio Control gateways. |
 | Secure credentials | Optionally save the password; profile data is encrypted using Android Keystore. |
@@ -47,7 +49,7 @@ Screenshots show the actual Android interface connected to a local synthetic API
 
 ## Start in a minute
 
-1. Install the signed APK from [Releases](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0).
+1. Install the signed APK from [Releases](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.2).
 2. Connect your VPN if the firewall is only reachable through it.
 3. Add a profile, verify the suggested address and enter your administrator credentials. The default management port is **4081**.
 4. For a private certificate, verify its SHA-256 fingerprint with your administrator before trusting it.
@@ -68,11 +70,12 @@ See the [setup guide](docs/GETTING_STARTED.en.md) for certificate changes, backg
 
 Release assets include a signed APK, an Android App Bundle for distribution, and SHA-256 checksums. Install the **APK** on your device; an AAB is not directly installable. This preview is distributed through GitHub, not a Google Play listing.
 
-[Release notes](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0) · [Privacy](docs/PRIVACY.en.md) · [Security reporting](SECURITY.md)
+[Release notes](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.2) · [Privacy](docs/PRIVACY.en.md) · [Security reporting](SECURITY.md)
 
 ## Feedback
 
 [Open an issue](https://github.com/nr084/opencontrol-admin-releases/issues/new/choose) with the app version, Android version and reproduction steps. Remove passwords, tokens, internal addresses and personal data from attachments.
 
 Independent OpenControl project. Not affiliated with or endorsed by GFI Software. Kerio Control is a trademark of its respective owner.
+
 
