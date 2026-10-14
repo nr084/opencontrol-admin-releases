@@ -1,77 +1,78 @@
-<p align="center"><img src="assets/banner.svg" alt="OpenControl Admin — Your Kerio Control. Within reach." width="100%"></p>
+<p align="center"><img src="assets/banner.svg" alt="OpenControl Admin — управление вашим Kerio Control" width="100%"></p>
 
 <p align="center">
-  <a href="https://github.com/nr084/opencontrol-admin-releases/releases"><img alt="Release" src="https://img.shields.io/github/v/release/nr084/opencontrol-admin-releases?include_prereleases&amp;color=087a43&amp;label=preview"></a>
-  <img alt="Android 8.0 and newer" src="https://img.shields.io/badge/Android-8.0%2B-087a43">
-  <img alt="Early preview" src="https://img.shields.io/badge/status-early_preview-3d6553">
+  <a href="https://github.com/nr084/opencontrol-admin-releases/releases"><img alt="Версия" src="https://img.shields.io/github/v/release/nr084/opencontrol-admin-releases?include_prereleases&amp;color=087a43&amp;label=preview"></a>
+  <img alt="Android 8.0 и новее" src="https://img.shields.io/badge/Android-8.0%2B-087a43">
+  <img alt="Предварительная версия" src="https://img.shields.io/badge/status-early_preview-3d6553">
 </p>
 
-<p align="center"><b>English</b> · <a href="README.ru.md">Русский</a></p>
-<p align="center"><a href="https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0"><b>Download for Android</b></a> · <a href="docs/GETTING_STARTED.en.md">Getting started</a> · <a href="https://github.com/nr084/opencontrol-admin-releases/issues">Report an issue</a></p>
+<p align="center"><a href="README.en.md">English</a> · <b>Русский</b></p>
+<p align="center"><a href="https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0"><b>Скачать для Android</b></a> · <a href="docs/GETTING_STARTED.ru.md">Начало работы</a> · <a href="https://github.com/nr084/opencontrol-admin-releases/issues">Сообщить об ошибке</a></p>
 
-**A mobile administration companion for your existing Kerio Control firewall.** Switch between gateways, inspect active hosts and network interfaces, review traffic rules, and get notified when API connectivity changes — in the familiar green OpenControl design.
+**Мобильный помощник администратора вашего Kerio Control.** Переключайтесь между шлюзами, смотрите активные узлы и сетевые интерфейсы, изучайте правила трафика и получайте уведомления об изменении доступности API — в знакомом зелёном оформлении OpenControl.
 
-This repository hosts public releases, screenshots and documentation. Application source code is maintained privately. **The current app interface is in Russian; this documentation is available in English and Russian.**
+Здесь размещены публичные релизы, скриншоты и документация. Исходный код приложения хранится приватно. **Интерфейс текущей версии — на русском; документация доступна на русском и английском.**
 
-## A look inside
+## Как это выглядит
 
 <table>
-  <tr><td align="center"><b>Your gateways</b></td><td align="center"><b>Active hosts</b></td><td align="center"><b>Traffic rules</b></td></tr>
+  <tr><td align="center"><b>Ваши шлюзы</b></td><td align="center"><b>Активные узлы</b></td><td align="center"><b>Правила трафика</b></td></tr>
   <tr>
-    <td width="33%"><img src="assets/screenshots/01-overview.png" alt="Gateway profiles and connected status"></td>
-    <td width="33%"><img src="assets/screenshots/02-hosts.png" alt="Active hosts, traffic totals and session controls"></td>
-    <td width="33%"><img src="assets/screenshots/04-rules.png" alt="Searchable read-only traffic rules"></td>
+    <td width="33%"><img src="assets/screenshots/01-overview.png" alt="Профили шлюзов и состояние подключения"></td>
+    <td width="33%"><img src="assets/screenshots/02-hosts.png" alt="Узлы, объёмы трафика и управление сессией"></td>
+    <td width="33%"><img src="assets/screenshots/04-rules.png" alt="Поиск и просмотр правил трафика"></td>
   </tr>
 </table>
 
 <details>
-<summary>Network interfaces, profile settings and light theme</summary>
-<p><img src="assets/screenshots/03-network.png" alt="Network interfaces" width="32%"> <img src="assets/screenshots/05-profile.png" alt="Profile settings" width="32%"> <img src="assets/screenshots/06-light-theme.png" alt="Light theme" width="32%"></p>
+<summary>Сетевые интерфейсы, настройки профиля и светлая тема</summary>
+<p><img src="assets/screenshots/03-network.png" alt="Сетевые интерфейсы" width="32%"> <img src="assets/screenshots/05-profile.png" alt="Настройки профиля" width="32%"> <img src="assets/screenshots/06-light-theme.png" alt="Светлая тема" width="32%"></p>
 </details>
 
-Screenshots show the actual Android interface connected to a local synthetic API fixture. All names, accounts and addresses shown are demonstration data. They are not a public Kerio service or a real customer network.
+На скриншотах — настоящий интерфейс Android-приложения с локальным имитатором API. Имена, учётные записи и адреса вымышлены. Это не открытый сервер Kerio и не корпоративная сеть пользователя.
 
-## What you can do
+## Возможности
 
-| Feature | In version 0.1.0 |
+| Функция | В версии 0.1.0 |
 | :--- | :--- |
-| Multiple profiles | Add, edit, delete and switch between Kerio Control gateways. |
-| Secure credentials | Optionally save the password; profile data is encrypted using Android Keystore. |
-| VPN address suggestion | Pre-fill an editable address from the available VPN network information. |
-| Overview | See the selected gateway and counts of hosts, interfaces and traffic rules. |
-| Active hosts | Search hosts, inspect connection counts and traffic totals, and sign out one selected host after confirmation. |
-| Network interfaces | Inspect interface addresses and connection state. |
-| Traffic rules | Browse and search the existing policy; editing is not available yet. |
-| Background checks | Opt in per profile; receive notifications when API login availability changes. |
-| Appearance | Light and dark themes following the OpenControl palette. |
+| Несколько профилей | Добавление, редактирование, удаление и переключение шлюзов Kerio Control. |
+| Защита учётных данных | Сохранение пароля по желанию; шифрование профиля средствами Android Keystore. |
+| Подсказка адреса VPN | Редактируемый адрес по доступной информации о VPN-сети. |
+| Обзор | Выбранный шлюз и количество узлов, интерфейсов и правил. |
+| Активные узлы | Поиск, число соединений, объёмы трафика и завершение сессии одного узла с подтверждением. |
+| Сетевые интерфейсы | Просмотр адресов и состояния связи. |
+| Правила трафика | Просмотр и поиск существующих правил; редактирование пока недоступно. |
+| Фоновая проверка | Включение отдельно для каждого профиля; уведомления об изменении доступности входа в API. |
+| Оформление | Светлая и тёмная темы в палитре OpenControl. |
 
-## Start in a minute
+## Начало работы
 
-1. Install the signed APK from [Releases](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0).
-2. Connect your VPN if the firewall is only reachable through it.
-3. Add a profile, verify the suggested address and enter your administrator credentials. The default management port is **4081**.
-4. For a private certificate, verify its SHA-256 fingerprint with your administrator before trusting it.
-5. Connect and use **Обзор / Узлы / Сеть / Правила** — Overview / Hosts / Network / Rules.
+1. Установите подписанный APK из [раздела Releases](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0).
+2. Подключите VPN, если шлюз доступен только через него.
+3. Добавьте профиль, проверьте предложенный адрес и введите учётные данные администратора. Порт управления по умолчанию — **4081**.
+4. Для частного сертификата сверьте SHA-256 с администратором и подтвердите доверие.
+5. Подключитесь и откройте нужную вкладку: **Обзор / Узлы / Сеть / Правила**.
 
-See the [setup guide](docs/GETTING_STARTED.en.md) for certificate changes, background checks and troubleshooting.
+Смена сертификата, фоновые проверки и решение проблем описаны в [инструкции](docs/GETTING_STARTED.ru.md).
 
-## Before you install
+## Перед установкой
 
-- **Bring your own firewall and access.** The app does not provide a VPN subscription, hosted Kerio instance or administrator account.
-- **Early preview.** Android 8.0+ is supported by the build. The UI and signed APK receive emulator checks; broad physical-device and OEM testing is still pending.
-- **Background checks are best effort.** Android schedules them approximately every 15 minutes and may defer them in sleep mode. This is not continuous monitoring or a CPU/bandwidth alerting service.
-- **Direct OpenControl handoff is planned.** The current VPN client does not yet expose the dedicated gateway provider. The current fallback is an editable suggestion from VPN network information; manual entry may be necessary.
-- **Manual refresh.** Screens show the time of the latest snapshot; they are not live streaming dashboards.
-- **iOS is planned**, with no iOS build available at present.
+- **Нужны свой firewall и доступ к нему.** Приложение не предоставляет VPN-подписку, сервер Kerio или аккаунт администратора.
+- **Ранняя предварительная версия.** Сборка поддерживает Android 8.0+. Интерфейс и подписанный APK проверяются в эмуляторе; широкое тестирование на физических устройствах ещё предстоит.
+- **Фоновая проверка не непрерывная.** Android запускает её примерно раз в 15 минут и может откладывать в режиме сна. Контроль CPU, полосы канала и пороговые оповещения пока не реализованы.
+- **Прямая передача адреса из OpenControl запланирована.** Текущий VPN-клиент ещё не предоставляет специальный provider. Сейчас используется редактируемая подсказка из параметров VPN; иногда адрес нужно ввести вручную.
+- **Обновление вручную.** На экране указано время последнего снимка данных; потокового обновления нет.
+- **iOS — в планах**, готовой сборки пока нет.
 
-## Downloads and verification
+## Загрузка и проверка
 
-Release assets include a signed APK, an Android App Bundle for distribution, and SHA-256 checksums. Install the **APK** on your device; an AAB is not directly installable. This preview is distributed through GitHub, not a Google Play listing.
+В релизе доступны подписанный APK, Android App Bundle для распространения и контрольные суммы SHA-256. На телефон устанавливается **APK**; AAB не предназначен для прямой установки. Предварительная версия распространяется через GitHub, а не через Google Play.
 
-[Release notes](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0) · [Privacy](docs/PRIVACY.en.md) · [Security reporting](SECURITY.md)
+[Заметки к релизу](https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0) · [Конфиденциальность](docs/PRIVACY.ru.md) · [Сообщения об уязвимостях](SECURITY.md)
 
-## Feedback
+## Обратная связь
 
-[Open an issue](https://github.com/nr084/opencontrol-admin-releases/issues/new/choose) with the app version, Android version and reproduction steps. Remove passwords, tokens, internal addresses and personal data from attachments.
+[Создайте issue](https://github.com/nr084/opencontrol-admin-releases/issues/new/choose), указав версию приложения, Android и шаги воспроизведения. Удалите из вложений пароли, токены, внутренние адреса и персональные данные.
 
-Independent OpenControl project. Not affiliated with or endorsed by GFI Software. Kerio Control is a trademark of its respective owner.
+Независимый проект OpenControl. Не связан с GFI Software и не заявляет об одобрении со стороны GFI. Kerio Control — товарный знак соответствующего правообладателя.
+

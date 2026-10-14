@@ -6,7 +6,7 @@
   <img alt="Предварительная версия" src="https://img.shields.io/badge/status-early_preview-3d6553">
 </p>
 
-<p align="center"><a href="README.md">English</a> · <b>Русский</b></p>
+<p align="center"><a href="README.en.md">English</a> · <b>Русский</b></p>
 <p align="center"><a href="https://github.com/nr084/opencontrol-admin-releases/releases/tag/v0.1.0"><b>Скачать для Android</b></a> · <a href="docs/GETTING_STARTED.ru.md">Начало работы</a> · <a href="https://github.com/nr084/opencontrol-admin-releases/issues">Сообщить об ошибке</a></p>
 
 **Мобильный помощник администратора вашего Kerio Control.** Переключайтесь между шлюзами, смотрите активные узлы и сетевые интерфейсы, изучайте правила трафика и получайте уведомления об изменении доступности API — в знакомом зелёном оформлении OpenControl.
@@ -75,3 +75,4 @@
 [Создайте issue](https://github.com/nr084/opencontrol-admin-releases/issues/new/choose), указав версию приложения, Android и шаги воспроизведения. Удалите из вложений пароли, токены, внутренние адреса и персональные данные.
 
 Независимый проект OpenControl. Не связан с GFI Software и не заявляет об одобрении со стороны GFI. Kerio Control — товарный знак соответствующего правообладателя.
+

@@ -1,6 +1,6 @@
 # Getting started
 
-[English](GETTING_STARTED.en.md) · [Русский](GETTING_STARTED.ru.md) · [Home](../README.md)
+[English](GETTING_STARTED.en.md) · [Русский](GETTING_STARTED.ru.md) · [Home](../README.en.md)
 
 ## Install
 
@@ -51,3 +51,4 @@ Android uses a periodic interval of about 15 minutes but can delay checks in Doz
 - **Screenshot is blank:** production builds protect the window from screen capture. Repository screenshots are captured by a test runner in an isolated emulator using synthetic data.
 
 The developer does not supply corporate server access or accounts. Keep support reports free of credentials and internal network data.
+
